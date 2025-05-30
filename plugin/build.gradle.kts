@@ -24,13 +24,13 @@ repositories {
 }
 
 dependencies {
-    api("org.pf4j:pf4j:3.10.0")
-    api("com.badlogicgames.gdx:gdx:1.12.0")
-    kapt("org.pf4j:pf4j:3.11.0")
+    api("org.pf4j:pf4j:${project.properties["pf4jVersion"]}")
+    api("com.badlogicgames.gdx:gdx:${project.properties["libgdxVersion"]}")
+    kapt("org.pf4j:pf4j:${project.properties["pf4jVersion"]}")
 
-    implementation("com.github.jamestkhan.mundus:commons:master-SNAPSHOT")
-    implementation("com.github.jamestkhan.mundus:plugin-api:master-SNAPSHOT")
-    implementation("com.github.jamestkhan.mundus:editor-commons:master-SNAPSHOT")
+    implementation("com.github.jamestkhan.mundus:commons:${project.properties["mundusVersion"]}")
+    implementation("com.github.jamestkhan.mundus:plugin-api:${project.properties["mundusVersion"]}")
+    implementation("com.github.jamestkhan.mundus:editor-commons:${project.properties["mundusVersion"]}")
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
