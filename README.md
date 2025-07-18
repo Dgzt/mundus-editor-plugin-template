@@ -1,7 +1,5 @@
 # Plugin template for [Mundus Editor](https://github.com/JamesTKhan/Mundus)
 
-This template works with [editor system PR](https://github.com/JamesTKhan/Mundus/pull/268).
-
 ## Needs to be changed
 
 1) Package and class names from `com.github.your_name.your_plugign` for what you want.
